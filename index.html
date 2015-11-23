@@ -1,4 +1,5 @@
 <head>
+	<meta charset="UTF-8">
 	<!--Import Google Icon Font-->
 	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!--Import materialize.css-->
@@ -13,21 +14,131 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
 
     <div>
+    	<section id="inicio">
 	    <div class="navbar-fixed">
 	    	<nav class="black">
 	    		<div class="nav-wrapper container">
 	    			<a href="#!" class="brand-logo">Logo</a>
 	    			<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 	    			<ul class="right hide-on-med-and-down">
-	    				<li><a href="#">Inicio</a></li>
-	    				<li><a href="#">Acerca</a></li>
+	    				<li><a href="#inicio">Inicio</a></li>
+	    				<li><a href="#acerca">Acerca</a></li>
+	    				<li><a href="#cervezas">Cervezas</a></li>
 	    				<li><a href="#">Suscribete</a></li>
-	    				<li><a href="#">Opiniones</a></li>
 	    				<li><a href="#">Contacto</a></li>
 	    			</ul>
 	    		</div>
 			</nav>
 		</div>
+
+		<div class="parallax-container">
+			<div class="parallax"><img src="img/IMG_1184.jpg"></div>
+		</div>
+		</section>
+
+		<section id="acerca">
+			<div class="section white">
+				<div class="row container">
+				<h2 class="header">Orgullosamente Venezolana</h2>
+				<p class="grey-text text-darken-3 lighten-3">Lorem ipsum dolor sit amet eos doming oporteat laboramus te. Quo te fabulas mentitum principes. Id vis elitr putent, fugit oblique ad mel. Id feugiat phaedrum accommodare duo, est deserunt indoctum contentiones ea, ne libris populo qui. Corpora lobortis consetetur qui et, dicat expetenda periculis in pro.
+
+				Te utamur ornatus graecis vix. No sea zril ocurreret quaerendum. Placerat signiferumque ne sed. Te errem verear has, hinc patrioque cum ea.</p>
+
+				<div class="slider">
+				    <ul class="slides">
+				      <li>
+				        <img src="img/IMG_1275.jpg"> 
+				        <div class="caption right-align">
+				          <h3>Característca</h3>
+				          <h5 class="light grey-text text-lighten-3">Algo que quieran compartir.</h5>
+				        </div>
+				      </li>
+				      <li>
+				        <img src="img/IMG_1187.jpg"> 
+				        <div class="caption left-align">
+				          <h3>Razón por la que los deban comprar</h3>
+				          <h5 class="light grey-text text-lighten-3">Algún slogan o algo</h5>
+				        </div>
+				      </li>
+				      <li>
+				        <img src="img/IMG_4930.jpg"> 
+				        <div class="caption center-align">
+				          <h3>Otra caracteristica</h3>
+				          <h5 class="light grey-text text-lighten-3">texto.</h5>
+				        </div>
+				      </li>
+				    </ul>
+				</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="cervezas">
+			<div class="row container">
+			<h2 class="header">Nuestras Cervezas</h2>
+				<div class="card col s3">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/amber/IMG_9216.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Amber Ale
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Amber Ale<i class="material-icons right">close</i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+
+				<div class="card col s3">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/brown/IMG_1248.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Brown Ale
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Brown Ale<i class="material-icons right">close</i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+
+				<div class="card col s3">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/doublebitter/IMG_5295.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Double Bitter Ale
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">DBL Bitter Ale<i class="material-icons right">close</i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+
+				<div class="card col s3">
+					<div class="card-image waves-effect waves-block waves-light">
+						<img class="activator" src="img/experimental/IMG_5256.jpg">
+					</div>
+					<div class="card-content">
+						<span class="card-title activator grey-text text-darken-4">Experimental
+					</div>
+					<div class="card-reveal">
+						<span class="card-title grey-text text-darken-4">Experimental<i class="material-icons right">close</i></span>
+						<p>Here is some more information about this product that is only revealed once clicked on.</p>
+					</div>
+				</div>
+		</section>
+
     </div>
 
 </body>
+<script type="text/javascript">
+	$(document).ready(function(){
+    	$('.parallax').parallax();
+    });
+
+    $(document).ready(function(){
+      $('.slider').slider();
+    });
+</script>
