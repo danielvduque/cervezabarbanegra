@@ -5724,7 +5724,7 @@ small {
   transition: box-shadow .25s;
   border-radius: 2px; }
   .card .card-title {
-    font-size: 24px;
+    font-size: 16px;
     font-weight: 300; }
     .card .card-title.activator {
       cursor: pointer; }
@@ -5773,7 +5773,9 @@ small {
       margin: 0;
       color: inherit; }
     .card .card-content .card-title {
-      line-height: 48px; }
+      line-height: 48px;
+      font-size: 16px; 
+    }
   .card .card-action {
     border-top: 1px solid rgba(160, 160, 160, 0.2);
     padding: 20px; }
@@ -8423,3 +8425,14 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+
+/* personal */
+  .parallax-text {
+    position: absolute;
+    padding:160px 0 0 160px;
+    box-sizing: initial;
+  }
+
+  nav ul li:hover, nav ul li.active{
+    background-color: #5D5C57;
+  }

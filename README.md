@@ -1,6 +1,7 @@
-#cervezabarbanegra
+# Cerveza Barba Negra
 
-Project for Barba Negra local beer. Learning css.
+### Landing page for Barba Negra. Venezuelan local beer
+**Learning Materialize**
 
 - Materialize css
 - HTML
