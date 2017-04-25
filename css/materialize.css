@@ -8436,3 +8436,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   nav ul li:hover, nav ul li.active{
     background-color: #5D5C57;
   }
+
+  .card-image img {
+      width: 50%;
+      height: 50%;
+    }
+
+  @media (max-width: 600px) {
+    .card .card-content {
+      padding: 10px; 
+      font-size: 14px !important
+    }
+    .card .card-content .card-title {
+      line-height: initial; 
+    }
+    .card-image img {
+      width: 130px !important;
+      height: 200px;
+    }
+    .separation {
+      width: 35px;
+      text-align: center;
+    }
+
+  }
